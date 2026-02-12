@@ -1,9 +1,4 @@
-import "./style.scss";
-import iconViteSrc from "./icons/vite.svg";
+import "./styles/main.scss";
 
-document.getElementById("app").innerHTML = `
-    <section>
-        <img src="vite.svg">
-        <img src="${iconViteSrc}">
-    </section>
-`;
+const app = document.getElementById("app");
+app.innerHTML = "<h2>Приложение загружено</h2>";

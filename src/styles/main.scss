@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@layer base {
+  /* Базовые стили */
+}
+
+@layer components {
+  /* Стили компонентов - могут переопределять base */
+}
+
+@layer utilities {
+  /* Утилиты - могут переопределять и base, и components */
+}

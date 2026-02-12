@@ -1,0 +1,21 @@
+header.bg-white.shadow-md
+  nav.container.mx-auto.px-4.py-4.flex.items-center.justify-between
+    // Логотип
+    a.text-2xl.font-bold.text-blue-600(href="/") 
+      | Logo
+
+    // Десктоп меню
+    ul(class=['hidden', 'md:flex', 'space-x-8'])
+      li
+        a(class=['text-gray-700', 'hover:text-blue-600'])(href="/") Главная
+      li
+        a(class=['text-gray-700', 'hover:text-blue-600'])(href="/about") О нас
+      li
+        a(class=['text-gray-700', 'hover:text-blue-600'])(href="/services") Услуги
+      li
+        a(class=['text-gray-700', 'hover:text-blue-600'])(href="/contact") Контакты
+
+    // Мобильное меню (бургер)
+    button(class=['md:hidden', 'text-gray-700', 'hover:text-blue-600', 'focus:outline-none'])#menu-btn
+      svg.w-6.h-6(xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor")
+        path(stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16") 
